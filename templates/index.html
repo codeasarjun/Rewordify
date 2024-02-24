@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sentence Rephraser</title>
+</head>
+<body>
+    <h1>Sentence Rephraser</h1>
+    <form method="post" action="/rephrase">
+        
+        <textarea name="sentence" id="sentence" rows="4" cols="50" placeholder="Enter a sentence" required></textarea>
+        <br>
+        <label for="style">Select rephrasing style:</label>
+        <select name="style" id="style">
+            <option value="simple">Simple English</option>
+            <option value="academic">Academic English</option>
+            <option value="fluency">Fluency</option>
+            <option value="tech">Technical English</option>
+        </select>
+        <br>
+        
+        <button type="submit">Rephrase</button>
+    </form>
+    {% if original %}
+        <p><strong>Original Sentence:</strong> {{ original }}</p>
+        <p><strong>Rephrased Sentence:</strong> {{ rephrased }}</p>
+    {% endif %}
+</body>
+</html>
