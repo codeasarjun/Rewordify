@@ -1,4 +1,4 @@
-## Sentence Rephrasing Web Application 📝🔄<br>
+## Rewordify : Rephrasing Web Application 📝🔄<br>
 # Overview<br>
 The Sentence Rephrasing Web Application is a Flask-based web application designed to provide users with the ability to input a sentence and choose a rephrasing style. The application uses the NLTK library for basic synonym replacement, offering four rephrasing styles: Simple English, Academic English, Fluency, and Technical English.
 
